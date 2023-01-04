@@ -1,13 +1,10 @@
-from stack import Stack
+import DataStructure
 from random import randint
 
-A=Stack()
+A=DataStructure.Stack()
 for i in range(randint(0,100)):
     i=randint(0,1)
     if i==1:
-        print("Push")
         A.Push(randint(0,100))
-    else:
-        print("PoP")    
+    else:    
         A.Pop()
-    A.PrintData()
